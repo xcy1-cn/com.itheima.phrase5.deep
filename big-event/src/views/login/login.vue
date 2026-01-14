@@ -1,8 +1,11 @@
 <template>
     <div class="login">
+        <div class="login-title">
+            <img src="@/assets/images/login_title.png" alt="">
+        </div>
         <el-card class="login-card">
             <div slot="header">
-                <span>注册</span>
+                <span>后台管理系统注册</span>
             </div>
             <div class="form">
                 <el-form status-icon :rules="rules" label-width="100px">
@@ -51,6 +54,14 @@ export default {
     width: 100%;
     height: 100vh;
     background: url('@/assets/images/login_bg.jpg') no-repeat center / cover;
+
+    .login-title {
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%);
+        z-index: 999;
+    }
 
     .login-card {
         position: absolute;
